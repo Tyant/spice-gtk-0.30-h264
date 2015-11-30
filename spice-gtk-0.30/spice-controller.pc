@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: spice-controller
+Description: SPICE Client controller library
+Version: 0.30
+
+Requires: glib-2.0
+Libs: -L${libdir} -lspice-controller
+Cflags: -I${includedir}/spice-controller
